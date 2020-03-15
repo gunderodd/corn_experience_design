@@ -1,0 +1,39 @@
+                            /* mobile */
+
+@media only screen and (max-width: 500px) {
+    .button--holder {
+        flex-direction: column;
+    }
+
+    .button {
+        margin-left: 0;
+    }
+}
+
+                            /* tablet */
+
+@media only screen and (min-width: 501px) and (max-width: 700px) {
+    .content--holder {
+        margin-top: 5vh;
+        width: 75vw;
+    }
+
+
+}
+
+
+
+/* desktop */
+
+@media only screen and (min-width: 701px) {
+    
+
+    .content--holder {
+        margin-top: 10vh;
+        width: 60vw;
+    }
+
+    .button {
+        margin-left: 0;
+    }
+}

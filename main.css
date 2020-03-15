@@ -75,8 +75,8 @@ header {
         text-transform: uppercase;
     }
 
-    .nav--link {
-
+    .nav--link:hover {
+        color: #9C4706;
     }
 
 
@@ -84,45 +84,67 @@ main {
     background-image: url("background.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+
     padding: 2rem;
+    height: 100vh;
 }
 
-    main h1 {
-        color: #091335;
-        font-weight: 900;
-        
-    }
-
-    .intro--text {
-        font-size: .9rem;
-    }
-
-    .button--holder {
+    .content--holder {
+        /* border: 1px solid red; */
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
-        .button {
-            margin: .1rem;
-            font-weight: 600;
+        main h1 {
+            color: #091335;
+            font-weight: 900;
+            
+        }
+
+        .intro--text {
             font-size: .9rem;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .button--holder {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 0;
+            padding: 0;
 
         }
 
-            .button--main {
-                background: #9C4706;
-                border: 2px solid #9C4706;
-                color: white;
-                padding: .1rem 1.5rem;
+            .button {
+                margin: .3rem;
+                margin-bottom: .5rem;
+                font-weight: 700;
+                font-size: .7rem;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+                text-transform: uppercase;
+                border-radius: 1px;
+
             }
 
-            .button--trans {
-                padding: .1rem .5rem;
-                border: 2px solid #9C4706;
-                color: #091335;
+            .button:hover {
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5), 0px 4px 4px rgba(0, 0, 0, 0.5);
+                background: #091335;
+                border-color: #091335;
+                color: white;
+
             }
+
+                .button--main {
+                    background: #9C4706;
+                    border: 2px solid #9C4706;
+                    color: white;
+                    padding: .1rem 1.5rem;
+                }
+
+                .button--trans {
+                    padding: .1rem .5rem;
+                    border: 2px solid #9C4706;
+                    color: #091335;
+                }
